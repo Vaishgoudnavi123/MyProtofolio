@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web developer portfolio showcasing projects, skills, and contact details.">
+    <meta name="keywords" content="web developer, portfolio, coding, design, front-end developer">
+    <meta name="author" content="Sudagani Vaishnavi">
+    <title>Sudagani Vaishnavi - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="path_to_favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f2f9ff; 
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            padding: 60px 0;
+            text-align: center;
+            background: linear-gradient(135deg, #FFB6C1, #FFD700); 
+            color: #fff;
+        }
+        h1 {
+            margin: 0;
+            font-size: 3.5em;
+            letter-spacing: 2px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        p {
+            margin: 10px 0;
+            font-size: 1.3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .intro {
+            padding: 40px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #fffae6, #f7f9fc); /* Soft yellow to light blue */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        .intro h2 {
+            font-size: 2.5em;
+            color: #ff69b4;
+        }
+        .intro p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .projects {
+            margin: 40px 0;
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #d3f8e2, #b1e0e3); 
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #ff69b4;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .project-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #ff69b4; 
+        }
+
+        .project-card p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: #777;
+        }
+
+        .project-card a {
+            color: #ff69b4;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .project-card a:hover {
+            color: #ff4500;
+        }
+
+        .project-card .fa {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: #ff69b4;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .social-links a {
+            color: #fff;
+            font-size: 40px;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+            color: #ff69b4; 
+        }
+
+        .social-links a.linkedin {
+            color: #0072b1;
+        }
+
+        .social-links a.github {
+            color: #333;
+        }
+
+        .social-links a.instagram {
+            background: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .social-links span {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+            display: block;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #94ca8d;
+            font-size: 1em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            color: #fff;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sudagani Vaishnavi</h1>
+        <p>Passionate about ECE | Coding Enthusiast | Innovator at Heart</p>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>About Me</h2>
+            <p>Hello, I'm Vaishnavi, a BTech student in Electronics and Communication Engineering with a keen interest in exploring cutting-edge technologies. I'm currently diving into the world of software development, learning to design and build impactful systems. I'm particularly fascinated by robotics, space exploration, and dark matter, and I'm eager to develop my programming skills to contribute to innovative solutions in these fields. As a curious learner, I thrive in environments that encourage growth and collaboration. My dream is to work on transformative projects in areas like robotics, AI, and space technology. Let's connect and grow together on this exciting journey!</p>        </section>
+
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project-card">
+                    <i class="fas fa-link"></i> 
+                    <h3>Project 1</h3>
+                    <p>Text Cleaner and Analyzer Tool</p>
+                    <a href="https://github.com/Vaishgoudnavi123/count" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <i class="fas fa-code"></i> 
+                    <h3>Project 2</h3>
+                    <p>ANALYSIS OF EEG SIGNALS TO RECOGNISE HUMAN EMOTIONS USING FOURIER TRANSFORM</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-links">
+            <a href="https://www.linkedin.com/in/sudagani-vaishnavi-33b51a2b7" target="_blank" class="linkedin">
+                <i class="fab fa-linkedin"></i>
+                <span>Contact me on LinkedIn</span>
+            </a>
+            <a href="https://github.com/Vaishgoudnavi123" target="_blank" class="github">
+                <i class="fab fa-github"></i>
+                <span>Check out my GitHub</span>
+            </a>
+            <a href="https://www.instagram.com/vaish_sudagani" target="_blank" class="instagram">
+                <i class="fab fa-instagram"></i>
+                <span>Follow me on Instagram</span>
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sudagani Vaishnavi. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
